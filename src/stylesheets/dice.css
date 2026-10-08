@@ -7,7 +7,7 @@ body.dices{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #d5ecff;
+    background-color: #96bee0;
 }
 
 .dices .container{
@@ -64,6 +64,84 @@ body.dices{
 
 .dices .dice{
     font-size: 130px;
+}
+
+.dices .roll-button{
+    width: 100%;
+    margin-top: 24px;
+    border: 0;
+    border-radius: 20px;
+    padding: 20px 24px;
+    background-color: #0f1f2c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dices .status{
+    border: 2px solid #fff;
+    padding: 34px;
+}
+
+.dices .status-title{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dices .score-container{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.dices .score-item{
+    color: #fff;
+    text-align: center;
+}
+
+.dices .score-name{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dices .score{
+    font-size: 40px;
+    font-weight: bold;
+    width: 75px;
+}
+
+.dices .result{
+    margin-top: 14px;
+    border-radius: 18px;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.dices .history-title{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dices .history-item{
+    border-radius: 14px;
+    padding: 11px 14px;
+    margin-bottom: 10px;
+    background-color: #505a63;
+    color: #fff;
+}
+
+.dices .history-red{
+    background-color: #b25353;
+}
+
+.dices .history-green{
+    background-color: #42b881;
 }
 
 /* alt+shift+a */
