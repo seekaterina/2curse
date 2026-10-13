@@ -144,4 +144,23 @@ body.dices{
     background-color: #42b881;
 }
 
+.dices .dice.dice-roll{
+    animation: dice-roll 0.5s linear infinite;
+}
+
+@keyframes dice-roll {
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(5deg) scale(1.1);
+    }
+    67%{
+        transform: rotate(-5deg) scale(1);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 /* alt+shift+a */
