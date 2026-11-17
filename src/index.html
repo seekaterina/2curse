@@ -19,15 +19,27 @@
   <main class="container" id="events">
     <h1>Афиша событий</h1>
 
-    <div class="filters">
-      <button class="button active" type="button" data-category="all">Все</button>
-      <button class="button" type="button" data-category="category1">Категория 1</button>
-      <button class="button" type="button" data-category="category2">Категория 2</button>
-      <button class="button" type="button" data-category="category3">Категория 3</button>
+    <div class="filter-container">
+      <div class="filters">
+        <button class="button active" type="button" data-category="all">Все</button>
+        <button class="button" type="button" data-category="category1">Категория 1</button>
+        <button class="button" type="button" data-category="category2">Категория 2</button>
+        <button class="button" type="button" data-category="category3">Категория 3</button>
+      </div>
+
+      <div class="sorting">
+        <label for="sort-select">Сортировка</label>
+        <select class="sort-select" id="sort-select">
+          <option value="default">По умолчанию</option>
+          <option value="title-ask">По названию А-Я</option>
+          <option value="title-desk">По названию Я-А</option>
+        </select>
+      </div>
     </div>
+    
 
     <div class="cards">
-      <article class="card" data-filter="category1">
+      <!-- <article class="card" data-filter="category1">
         <div class="card-image"></div>
         <div class="card-content">
           <h2>Городской маркет</h2>
@@ -85,11 +97,26 @@
           <p>Маршрут по городу с историями о знакомых местах.</p>
           <button class="button" type="button">Подробнее</button>
         </div>
-      </article>
+      </article> -->
     </div>
 
     <div class="more-events">
       <button class="button" type="button">Показать еще</button>
     </div>
+
+    <template id="event-card">
+      <article class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h2></h2>
+          <div class="card-category"></div>
+          <!-- <span class="category"></span> -->
+          <p></p>
+          <a class="button">Подробнее</a>
+        </div>
+      </article>
+    </template>
+    
+
   </main>
 </html>
